@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher View - Library Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .borrow-form {
+            margin-top: 20px;
+        }
+
+        .borrow-form input[type="text"] {
+            width: calc(100% - 40px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .borrow-form button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .borrow-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome Teacher</h2>
+
+        <!-- View List of Books -->
+        <h3>List of Books</h3>
+        <ul id="book-list">
+            <li>Book 1</li>
+            <li>Book 2</li>
+            <li>Book 3</li>
+        </ul>
+
+        <!-- Borrow Book Form -->
+        <div class="borrow-form">
+            <h3>Borrow Book</h3>
+            <input type="text" placeholder="Enter Book Title">
+            <button>Borrow</button>
+        </div>
+
+        <!-- Borrowed Books -->
+        <h3>Currently Borrowed Books</h3>
+        <ul id="borrowed-books">
+            <li>Book 4</li>
+            <li>Book 5</li>
+        </ul>
+
+        <!-- Returned Books -->
+        <h3>List of Returned Books</h3>
+        <ul id="returned-books">
+            <li>Book 2</li>
+            <li>Book 3</li>
+        </ul>
+    </div>
+</body>
+</html>
